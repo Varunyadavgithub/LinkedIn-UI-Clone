@@ -110,3 +110,146 @@ a{
     position: absolute;
 }
 /* ------------------------------navbar end here---------------------------------- */
+.container{
+    padding: 20px 4%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+/* left-sidebar */
+.left-sidebar{
+    flex-basis: 25%;
+    align-self: flex-start;
+}
+.sidebar-profile-box{
+    background: #fff;
+    border-radius: 10px;
+
+}
+.sidebar-profile-info{
+    padding: 10px 25px;
+    border-bottom: 1px solid #ccc;
+}
+.sidebar-profile-info img{
+    width: 80px;
+    border-radius: 50%;
+    background-color: white;
+    padding: 4px;
+    margin-top: -45px;
+   margin-left: 50%;
+}
+.sidebar-profile-info h1{
+    font-size: 20px;
+    font-weight: 600;
+    color: #222;
+    text-align: center;
+}
+.sidebar-profile-info p{
+    font-size: 14px;
+    font-weight: 500;
+    color: #777;
+    letter-spacing: 1px;
+    padding-top: 10px;
+}
+.sidebar-profile-insights{
+    border-bottom: 2px solid #ccc;
+    padding: 10px 20px;
+}
+.sidebar-profile-insights ul{
+    list-style: none;
+}
+.sidebar-profile-insights ul li{
+    width: 100%;
+    margin: 5px 0;
+    font-size: 13px;
+    font-weight: 600;
+}
+.sidebar-profile-insights ul li span{
+    float: right;
+    color: #045be6;
+    font-weight: 600;
+}
+.sidebar-profile-premium{
+    padding: 10px 10px;
+    border-bottom: 2px solid #ccc;
+}
+.sidebar-profile-premium a{
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+    font-weight: 500;
+    color: black;
+}
+.sidebar-profile-premium a i{
+    color: goldenrod;
+    font-size: 20px;
+    padding: 5px;
+}
+.sidebar-profile-item{
+    padding: 10px 20px;
+    font-size: 20px;
+    font-weight: 500;
+}
+.sidebar-profile-item i{
+    padding: 10px;
+}
+.sidebar-activity{
+    background: white;
+    margin: 12px 0;
+    padding: 5px 25px;
+    border-radius:10px;
+}
+.sidebar-activity h3{
+    color: #777;
+    font-size: 15px;
+    font-weight: 500;
+    margin: 20px 0 10px;
+}
+.sidebar-activity a{
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    font-weight: 500;
+    color: #888;
+    margin: 3px 0;
+    padding: 5px;
+}
+.sidebar-activity a i{
+    width: 20px;
+    margin-right: 10px;
+}
+.sidebar-activity h3 a{
+    font-size: 15px;
+    color: #045be6;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.discover-more-links{
+    border-top: 2px solid #ccc;
+    text-align: center;
+    margin-top: 20px;
+    margin-left: -25px;
+    margin-right: -25px;
+}
+.discover-more-links a{
+    display: inline-block;
+    margin: 10px 0;
+    font-size: 15px;
+}
+
+
+
+
+
+
+
+/* right sidebar */
+.right-sidebar{
+    flex-basis: 25%;
+    align-self: flex-start;
+}
+/* main content */
+.main-content{
+    flex-basis: 47%;
+}
