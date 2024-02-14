@@ -116,6 +116,7 @@ a{
     flex-wrap: wrap;
     justify-content: center;
 }
+
 /* left-sidebar */
 .left-sidebar{
     flex-basis: 25%;
@@ -214,6 +215,11 @@ a{
     margin: 3px 0;
     padding: 5px;
 }
+.sidebar-activity a:hover{
+    color: black;
+    background-color: #88888861;
+    border-radius: 5px;
+}
 .sidebar-activity a i{
     width: 20px;
     margin-right: 10px;
@@ -238,18 +244,100 @@ a{
     font-size: 15px;
 }
 
-
-
-
-
-
+/* main content */
+.main-content{
+    flex-basis: 47%;
+}
 
 /* right sidebar */
 .right-sidebar{
     flex-basis: 25%;
     align-self: flex-start;
 }
-/* main content */
-.main-content{
-    flex-basis: 47%;
+.sidebar-news{
+    background: white;
+    padding: 10px 25px;
+}
+.sidebar-news i{
+    width: 15px;
+    float: right;
+    margin-top: 10px;
+}
+.sidebar-news h3{
+    font-size: 18px;
+    font-weight: 600;
+    color: #333;
+    margin: 10px 0 30px;
+}
+.sidebar-news a{
+    display: block;
+    font-size: 12px;
+    font-weight: 600;
+    margin-top: 10px;
+}
+.sidebar-news span{
+    font-size: 12px;
+}
+.read-more-link{
+    color: #045be6;
+    font-weight: 500;
+    margin: 20px 0 10px;
+}
+.sidebar-ad{
+    background: white;
+    padding: 15px 25px;
+    text-align: center;
+    margin: 12px 0;
+    font-size: 12px;
+}
+.sidebar-ad small{
+    float: right;
+    font-weight: 500;
+}
+.sidebar-ad p{
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+.sidebar-ad img{
+    width: 60px;
+    border-radius: 50%;
+    margin: 4px;
+}
+.sidebar-ad b{
+    display: block;
+    font-weight: 500;
+    margin-top: 10px;
+}
+.ad-link{
+    display: inline-block;
+    border: 1px solid #045be6;
+    padding: 5px 15px;
+    border-radius: 30px;
+    font-weight: 500;
+    margin: 20px auto 10px;
+} 
+.ad-link:hover{
+    color: white;
+    background-color: #045be6;
+}
+.sidebar-useful-links{
+    padding: 15px 25px;
+    text-align: center;
+}
+.sidebar-useful-links a{
+    display: inline-block;
+    font-size: 14px;
+    margin: 4px 4px;
+}
+.copyright-msg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    margin-top: 10px;
+    font-weight: 500;
+}
+.copyright-msg img{
+    width: 18px;
+    margin-right: 4px;
 }
