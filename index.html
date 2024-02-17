@@ -27,7 +27,49 @@
         </div>
         <div class="navbar-right">
             <div class="online">
-                <img src="images/profile.png" alt="user-profile" class="nav-profile-img">
+                <img src="images/profile.png" alt="user-profile" class="nav-profile-img" onclick="toggleMenu()">
+            </div>
+        </div>
+<!-- ----------------profile-drop-down-menu----------------------- -->
+        <div class="profile-menu-wrap" id="profileMenu">
+            <div class="profile-menu">
+                <div class="user-info">
+                    <img src="images/profile.png">
+                    <div>
+                        <h3>Varun Yadav</h3>
+                        <a href="#">See your Profile</a>
+                    </div>
+                </div>
+                <hr>
+                <a href="#" class="profile-menu-link">
+                    <img src="images/feedback.png">
+                    <p>Give feedback</p>
+                    <span>></span>
+                </a>
+
+                <a href="#" class="profile-menu-link">
+                    <img src="images/setting.png">
+                    <p>Settings & Privacy</p>
+                    <span>></span>
+                </a>
+
+                <a href="#" class="profile-menu-link">
+                    <img src="images/help.png">
+                    <p>Help & Support</p>
+                    <span>></span>
+                </a>
+
+                <a href="#" class="profile-menu-link">
+                    <img src="images/display.png">
+                    <p>Display & Accessibility</p>
+                    <span>></span>
+                </a>
+
+                <a href="#" class="profile-menu-link">
+                    <img src="images/logout.png">
+                    <p>Logout</p>
+                    <span>></span>
+                </a>
             </div>
         </div>
     </nav>
@@ -85,7 +127,226 @@
             </div>
         </div>
         <!-- ------------------------main-content------------------------------------- -->
-        <div class="main-content"></div>   
+        <div class="main-content">
+    
+            <div class="create-post">
+                <div class="create-post-input">
+                    <img src="images/profile.png">
+                    <textarea rows="2" placeholder="Write a post"></textarea>
+                </div>
+
+                <div class="create-post-links">
+                    <li><i class="fa-solid fa-image"></i>Media</li>
+                    <li><i class="fa-regular fa-calendar-days"></i>Event</li>
+                    <li><i class="fa-regular fa-newspaper"></i>Write articale</li>
+                </div>
+            </div>
+
+            <div class="sort-by">
+                <hr>
+                <p>sort by: <span>top <i class="fa-solid fa-sort-down"></i></span></p>
+            </div>
+
+            <!-- post-1 -->
+            <div class="post">
+                <div class="post-author">
+                    <img src="images/user-2.png">
+                    <div>
+                        <h1>Benjamin Leo</h1>
+                        <small>Founder and CEO at Gellelio Group | Angel Investor</small>
+                        <small>2 hours ago</small>
+                    </div>
+                </div>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. At, totam nostrum unde dolorum itaque eveniet reprehenderit veniam maiores aut autem quis eaque cumque animi asperiores rerum, atque dolore magnam. Necessitatibus esse autem in tenetur quasi temporibus earum voluptatibus debitis unde fugiat nemo magni maiores quo reiciendis, odit ab aliquid deserunt.</p>
+                <img src="images/post-1.jpg" width="100%">
+
+                <div class="post-stats">
+                    <div>
+                        <img src="images/thumbsup.png">
+                        <img src="images/love.png">
+                        <img src="images/clap.png">
+                        <span class="liked-users">Abhinav Mishra and 75 others</span>
+                    </div> 
+
+                    <div>
+                        <span>22 comments &middot; 40 shares</span>
+                    </div>
+                </div>
+
+                <div class="post-activity">
+                    <div class="post-activity-link">
+                        <i class="fa-regular fa-thumbs-up"></i>
+                        <!-- <img src="images/like.png"> -->
+                        <span>Like</span>
+                    </div>
+                    <div class="post-activity-link">
+                        <i class="fa-regular fa-comment-dots"></i>
+                        <!-- <img src="images/comment.png"> -->
+                        <span>comment</span>
+                    </div>
+                    <div class="post-activity-link">
+                        <i class="fa-solid fa-repeat"></i>
+                        <!-- <img src="images/repost.png"> -->
+                        <span>Repost</span>
+                    </div>
+                    <div class="post-activity-link">
+                        <i class="fa-solid fa-paper-plane"></i>
+                        <!-- <img src="images/send.png"> -->
+                        <span>Send</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- post-2 -->
+            <div class="post">
+                <div class="post-author">
+                    <img src="images/user-3.png">
+                    <div>
+                        <h1>Clarence George</h1>
+                        <small>Founder and CEO at Gellelio Group | Angel Investor</small>
+                        <small>2 hours ago</small>
+                    </div>
+                </div>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. At, totam nostrum unde dolorum itaque eveniet reprehenderit veniam maiores aut autem quis eaque cumque animi asperiores rerum, atque dolore magnam. Necessitatibus esse autem in tenetur quasi temporibus earum voluptatibus debitis unde fugiat nemo magni maiores quo reiciendis, odit ab aliquid deserunt.</p>
+                <img src="images/post-2.jpg" width="100%">
+
+                <div class="post-stats">
+                    <div>
+                        <img src="images/thumbsup.png">
+                        <img src="images/love.png">
+                        <img src="images/clap.png">
+                        <span class="liked-users">Abhinav Mishra and 75 others</span>
+                    </div> 
+
+                    <div>
+                        <span>22 comments &middot; 40 shares</span>
+                    </div>
+                </div>
+
+                <div class="post-activity">
+                    <div class="post-activity-link">
+                        <i class="fa-regular fa-thumbs-up"></i>
+                        <!-- <img src="images/like.png"> -->
+                        <span>Like</span>
+                    </div>
+                    <div class="post-activity-link">
+                        <i class="fa-regular fa-comment-dots"></i>
+                        <!-- <img src="images/comment.png"> -->
+                        <span>comment</span>
+                    </div>
+                    <div class="post-activity-link">
+                        <i class="fa-solid fa-repeat"></i>
+                        <!-- <img src="images/repost.jpg"> -->
+                        <span>Repost</span>
+                    </div>
+                    <div class="post-activity-link">
+                        <i class="fa-solid fa-paper-plane"></i>
+                        <!-- <img src="images/send.png"> -->
+                        <span>Send</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- post-3 -->
+            <div class="post">
+                <div class="post-author">
+                    <img src="images/user-4.png">
+                    <div>
+                        <h1>Benjamin Leo</h1>
+                        <small>Founder and CEO at Gellelio Group | Angel Investor</small>
+                        <small>2 hours ago</small>
+                    </div>
+                </div>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. At, totam nostrum unde dolorum itaque eveniet reprehenderit veniam maiores aut autem quis eaque cumque animi asperiores rerum, atque dolore magnam. Necessitatibus esse autem in tenetur quasi temporibus earum voluptatibus debitis unde fugiat nemo magni maiores quo reiciendis, odit ab aliquid deserunt.</p>
+                <img src="images/post-3.jpg" width="100%">
+
+                <div class="post-stats">
+                    <div>
+                        <img src="images/thumbsup.png">
+                        <img src="images/love.png">
+                        <img src="images/clap.png">
+                        <span class="liked-users">Abhinav Mishra and 75 others</span>
+                    </div> 
+
+                    <div>
+                        <span>22 comments &middot; 40 shares</span>
+                    </div>
+                </div>
+
+                <div class="post-activity">
+                    <div class="post-activity-link">
+                        <i class="fa-regular fa-thumbs-up"></i>
+                        <!-- <img src="images/like.png"> -->
+                        <span>Like</span>
+                    </div>
+                    <div class="post-activity-link">
+                        <i class="fa-regular fa-comment-dots"></i>
+                        <!-- <img src="images/comment.png"> -->
+                        <span>comment</span>
+                    </div>
+                    <div class="post-activity-link">
+                        <i class="fa-solid fa-repeat"></i>
+                        <!-- <img src="images/repost.jpg"> -->
+                        <span>Repost</span>
+                    </div>
+                    <div class="post-activity-link">
+                        <i class="fa-solid fa-paper-plane"></i>
+                        <!-- <img src="images/send.png"> -->
+                        <span>Send</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- post-4 -->
+            <div class="post">
+                <div class="post-author">
+                    <img src="images/user-5.png">
+                    <div>
+                        <h1>Benjamin Leo</h1>
+                        <small>Founder and CEO at Gellelio Group | Angel Investor</small>
+                        <small>2 hours ago</small>
+                    </div>
+                </div>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. At, totam nostrum unde dolorum itaque eveniet reprehenderit veniam maiores aut autem quis eaque cumque animi asperiores rerum, atque dolore magnam. Necessitatibus esse autem in tenetur quasi temporibus earum voluptatibus debitis unde fugiat nemo magni maiores quo reiciendis, odit ab aliquid deserunt.</p>
+                <img src="images/post-4.jpg" width="100%">
+
+                <div class="post-stats">
+                    <div>
+                        <img src="images/thumbsup.png">
+                        <img src="images/love.png">
+                        <img src="images/clap.png">
+                        <span class="liked-users">Abhinav Mishra and 75 others</span>
+                    </div> 
+
+                    <div>
+                        <span>22 comments &middot; 40 shares</span>
+                    </div>
+                </div>
+
+                <div class="post-activity">
+                    <div class="post-activity-link">
+                        <i class="fa-regular fa-thumbs-up"></i>
+                        <!-- <img src="images/like.png"> -->
+                        <span>Like</span>
+                    </div>
+                    <div class="post-activity-link">
+                        <i class="fa-regular fa-comment-dots"></i>
+                        <!-- <img src="images/comment.png"> -->
+                        <span>comment</span>
+                    </div>
+                    <div class="post-activity-link">
+                        <i class="fa-solid fa-repeat"></i>
+                        <!-- <img src="images/repost.jpg"> -->
+                        <span>Repost</span>
+                    </div>
+                    <div class="post-activity-link">
+                        <i class="fa-solid fa-paper-plane"></i>
+                        <!-- <img src="images/send.png"> -->
+                        <span>Send</span>
+                    </div>
+                </div>
+            </div>
+        </div>   
         <!-- ----------------------------right-sidebar------------------------------------------  -->
         <div class="right-sidebar">
             <div class="sidebar-news">
@@ -137,5 +398,11 @@
         </div>
     </div>
 </body>
-<script></script>
+<script>
+    
+    let profileMenu=document.getElementById("profileMenu");
+    function toggleMenu(){
+        profileMenu.classList.toggle("open-menu");
+    }
+</script>
 </html>
