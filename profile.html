@@ -12,6 +12,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link rel="stylesheet" href="mediaQuery.css">
   </head>
   <body>
     <nav class="navbar">
@@ -69,40 +70,40 @@
           <div class="user-info">
             <img src="images/profile.png" />
             <div>
-              <h3>Varun Yadav</h3>
-              <a href="profile.html">See your Profile</a>
+              <h1>Varun Yadav</h1>
+              <p>
+                💻CS'25 @Parul University | Coding Enthusiasts 🧑‍💻 | Java | DSA |
+                300+ @GFG | 126 Days of Streak🔥on GFG | Institute Rank 20🏅GFG
+                | Full Stack Developement Enthusiasts
+              </p>
             </div>
           </div>
+          <div class="view-profile-btn">
+            <a href="profile.html">View Profile</a>
+          </div>
           <hr />
-          <a href="#" class="profile-menu-link">
-            <img src="images/feedback.png" />
-            <p>Give feedback</p>
-            <span>></span>
-          </a>
-
-          <a href="#" class="profile-menu-link">
-            <img src="images/setting.png" />
-            <p>Settings & Privacy</p>
-            <span>></span>
-          </a>
-
-          <a href="#" class="profile-menu-link">
-            <img src="images/help.png" />
-            <p>Help & Support</p>
-            <span>></span>
-          </a>
-
-          <a href="#" class="profile-menu-link">
-            <img src="images/display.png" />
-            <p>Display & Accessibility</p>
-            <span>></span>
-          </a>
-
-          <a href="#" class="profile-menu-link">
-            <img src="images/logout.png" />
-            <p>Logout</p>
-            <span>></span>
-          </a>
+          <div class="account-info">
+            <h2>Account</h2>
+            <b
+              ><a href="#"
+                ><i class="fa-solid fa-money-bill"></i>Try Premium for free</a
+              ></b
+            >
+            <ul>
+              <li><a href="#">Settings & Privacy</a></li>
+              <li><a href="#">Help</a></li>
+              <li><a href="#">Language</a></li>
+            </ul>
+            <hr />
+            <br />
+            <h2>Manage</h2>
+            <ul>
+              <li><a href="#">Posts & Activity</a></li>
+              <li><a href="#">Job Posting Account</a></li>
+              <hr />
+              <li><a href="#">Sign Out</a></li>
+            </ul>
+          </div>
         </div>
       </div>
     </nav>
@@ -111,7 +112,7 @@
     <div class="container">
       <div class="profile-main">
         <div class="profile-container">
-          <img src="images/cover-pic.png" width="100%" />
+          <img src="images/banner.jpg" width="100%" />
           <div class="profile-container-inner">
             <img src="images/profile.png" class="profile-pic" />
             <h1>Varun Yadav</h1>
@@ -120,11 +121,17 @@
               300+ @GFG | 126 Days of Streak🔥on GFG | Institute Rank 20🏅GFG |
               Full Stack Developement Enthusiasts
             </p>
-            <br>
-            <p>Jaunpur, Uttar Pradesh, India &middot; <a href="#">Contact Info</a></p>
+            <br />
+            <p>
+              Jaunpur, Uttar Pradesh, India &middot;
+              <a href="#">Contact Info</a>
+            </p>
             <div class="network-btn">
-              <div>My Portfolio <i class="fa-solid fa-arrow-up-right-from-square"></i></div>
-              <div>568 followers &middot; 500+ connections</div> 
+              <div>
+                My Portfolio
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </div>
+              <div>568 followers &middot; 500+ connections</div>
             </div>
             <div class="profile-btn">
               <a href="#" class="primery-btn">Open to</a>
@@ -170,7 +177,10 @@
               <h3>Problem Solver</h3>
               <b>LeetCode</b>
               <b>Jan 2024 - Present · 2 mos</b>
-              <p>I have been consistently solving problems on LeetCode and I am proudly say that I have solved over 100+ problems.
+              <p>
+                I have been consistently solving problems on LeetCode and I am
+                proudly say that I have solved over 100+ problems.
+              </p>
               <hr />
             </div>
           </div>
@@ -260,7 +270,7 @@
               <h4>Node JS</h4>
             </div>
           </div>
-           <hr />
+          <hr />
           <a href="#" class="experience-link"
             >Show all 20 Skills <img src="images/right-arrow.png"
           /></a>
@@ -279,7 +289,7 @@
               <h4>Data Base Management System (DBMS)</h4>
             </div>
           </div>
-           <hr />
+          <hr />
           <a href="#" class="experience-link"
             >Show all 5 Courses <img src="images/right-arrow.png"
           /></a>
@@ -388,4 +398,10 @@
       </div>
     </div>
   </body>
+  <script>
+    let profileMenu = document.getElementById("profileMenu");
+    function toggleMenu() {
+      profileMenu.classList.toggle("open-menu");
+    }
+  </script>
 </html>

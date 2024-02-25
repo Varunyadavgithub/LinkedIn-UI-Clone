@@ -516,11 +516,11 @@ a{
     transition: max-height 0.5s;
 }
 .profile-menu-wrap.open-menu{
-    max-height: 400px;
+    max-height: 600px;
 }
 .profile-menu{
-    color: #fff;
-    background: #222;
+    color: #333;
+    background: #fff;
     padding: 20px;
     margin: 10px;
     border-radius: 10px;
@@ -533,35 +533,49 @@ a{
     width: 50px;
     border-radius: 50%;
     margin-right: 15px;
+    position: relative;
+    top: -70px;
 }
-.user-info h3{
+.user-info h1{
+    margin: 5px;
+}
+.view-profile-btn{
+    width: 100%;
+    border:1px solid #0454d4;
+    border-radius: 20px;
+    margin: 10px 0;
+    padding: 5px;
+    text-align: center;
+}
+.view-profile-btn:hover{
+    border: 2px solid #0454d4;
+}
+.view-profile-btn a{
     font-weight: 500;
+    color: #0454d4;
+    cursor: pointer;
 }
-.user-info a{
-    color: #c9dbf8;
-    font-size: 13px;
+.account-info{
+    margin: 5px;
+    padding: 10px;
 }
-.profile-menu hr{
-    border: none;
-    height: 1px;
-    width: 100%;
-    background: #fff;
-    margin: 15px 0 10px;
+.account-info h2{
+    margin-bottom: 5px;
 }
-.profile-menu-link{
-    display: flex;
-    align-items: center;
-    color: #fff;
-    margin: 12px 0;
-    font-size: 14px;
+.account-info b a i{
+    color: goldenrod;
+    padding: 10px;
 }
-.profile-menu-link p{
-    width: 100%;
+.account-info b a:hover{
+    color: #0454d4;
+    text-decoration: underline;
 }
-.profile-menu-link img{
-    width: 35px;
-    border-radius: 50%;
-    margin-right: 15px;
+.account-info ul li{
+    list-style: none;
+    padding: 5px;
+}
+.account-info ul li:hover{
+    text-decoration: underline;
 }
 /* ---------------------Profile-page----------------------------- */
 .profile-main{

@@ -1,424 +1,520 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>LinkedIn Clone</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="mediaQuery.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaQuery.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
     <nav class="navbar">
-        <div class="navbar-left">
-            <a href="index.html" class="logo"><img src="images/logo.png" alt="logo"></a>
-            <div class="search-box">
-                <i class="fa-solid fa-magnifying-glass"></i>
-                <input type="text" placeholder="Search" name="" id="">
-            </div>
+      <div class="navbar-left">
+        <a href="index.html" class="logo"
+          ><img src="images/logo.png" alt="logo"
+        /></a>
+        <div class="search-box">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <input type="text" placeholder="Search" name="" id="" />
         </div>
-        <div class="navbar-center">
+      </div>
+      <div class="navbar-center">
+        <ul>
+          <li>
+            <a href="index.html" class="active-link"
+              ><i class="fa-solid fa-house"></i><span>Home</span></a
+            >
+          </li>
+          <li>
+            <a href="#"
+              ><i class="fa-solid fa-user-group"></i><span>My Network</span></a
+            >
+          </li>
+          <li>
+            <a href="#"
+              ><i class="fa-solid fa-briefcase"></i><span>Jobs</span></a
+            >
+          </li>
+          <li>
+            <a href="#"
+              ><i class="fa-solid fa-comment-dots"></i><span>Messaging</span></a
+            >
+          </li>
+          <li>
+            <a href="#"
+              ><i class="fa-solid fa-bell"></i><span>Notifications</span></a
+            >
+          </li>
+        </ul>
+      </div>
+      <div class="navbar-right">
+        <div class="online">
+          <img
+            src="images/profile.png"
+            alt="user-profile"
+            class="nav-profile-img"
+            onclick="toggleMenu()"
+          />
+        </div>
+      </div>
+      <!-- ----------------profile-drop-down-menu----------------------- -->
+      <div class="profile-menu-wrap" id="profileMenu">
+        <div class="profile-menu">
+          <div class="user-info">
+            <img src="images/profile.png" />
+            <div>
+              <h1>Varun Yadav</h1>
+              <p>
+                💻CS'25 @Parul University | Coding Enthusiasts 🧑‍💻 | Java | DSA |
+                300+ @GFG | 126 Days of Streak🔥on GFG | Institute Rank 20🏅GFG
+                | Full Stack Developement Enthusiasts
+              </p>
+              <!-- <a href="profile.html">See your Profile</a> -->
+            </div>
+          </div>
+          <div class="view-profile-btn"><a href="profile.html">View Profile</a></div>
+          <hr>
+          <div class="account-info">
+            <h2>Account</h2>
+            <b><a href="#"><i class="fa-solid fa-money-bill"></i>Try Premium for free</a></b>
             <ul>
-                <li><a href="index.html" class="active-link"><i class="fa-solid fa-house"></i><span>Home</span></a></li>
-                <li><a href="#"><i class="fa-solid fa-user-group"></i><span>My Network</span></a></li>
-                <li><a href="#"><i class="fa-solid fa-briefcase"></i><span>Jobs</span></a></li>
-                <li><a href="#"><i class="fa-solid fa-comment-dots"></i><span>Messaging</span></a></li>
-                <li><a href="#"><i class="fa-solid fa-bell"></i><span>Notifications</span></a></li>
+                <li><a href="#">Settings & Privacy</a></li>
+                <li><a href="#">Help</a></li>
+                <li><a href="#">Language</a></li>
             </ul>
-        </div>
-        <div class="navbar-right">
-            <div class="online">
-                <img src="images/profile.png" alt="user-profile" class="nav-profile-img" onclick="toggleMenu()">
-            </div>
-        </div>
-<!-- ----------------profile-drop-down-menu----------------------- -->
-        <div class="profile-menu-wrap" id="profileMenu">
-            <div class="profile-menu">
-                <div class="user-info">
-                    <img src="images/profile.png">
-                    <div>
-                        <h3>Varun Yadav</h3>
-                        <a href="profile.html">See your Profile</a>
-                    </div>
-                </div>
+            <hr>
+            <br>
+            <h2>Manage</h2>
+            <ul>
+                <li><a href="#">Posts & Activity</a></li>
+                <li><a href="#">Job Posting Account</a></li>
                 <hr>
-                <a href="#" class="profile-menu-link">
-                    <img src="images/feedback.png">
-                    <p>Give feedback</p>
-                    <span>></span>
-                </a>
-
-                <a href="#" class="profile-menu-link">
-                    <img src="images/setting.png">
-                    <p>Settings & Privacy</p>
-                    <span>></span>
-                </a>
-
-                <a href="#" class="profile-menu-link">
-                    <img src="images/help.png">
-                    <p>Help & Support</p>
-                    <span>></span>
-                </a>
-
-                <a href="#" class="profile-menu-link">
-                    <img src="images/display.png">
-                    <p>Display & Accessibility</p>
-                    <span>></span>
-                </a>
-
-                <a href="#" class="profile-menu-link">
-                    <img src="images/logout.png">
-                    <p>Logout</p>
-                    <span>></span>
-                </a>
-            </div>
+                <li><a href="#">Sign Out</a></li>
+            </ul>
+          </div>
         </div>
+      </div>
     </nav>
     <!-- ----------------------------navbar close--------------------------- -->
 
     <div class="container">
-        <!-- ---------------------left-sidebar------------------------------- -->
-        <div class="left-sidebar">
-            <div class="sidebar-profile-box">
-                <img src="images/cover-pic.png" width="100%">
+      <!-- ---------------------left-sidebar------------------------------- -->
+      <div class="left-sidebar">
+        <div class="sidebar-profile-box">
+          <img src="images/banner.jpg" width="100%" />
 
-                <div class="sidebar-profile-info">
-                    <img src="images/profile.png">
-                    <h1>Varun Yadav</h1>
-                    <p>&#128187;CS'25 @Parul University | Coding Enthusisast | C/C++/Java | 250+ @GFG | 126 Days of streak &#128293; on GFG | Institude Rank 20 &#129351; GFG | MERN Stack Enthusiasts</p>
-                </div>
+          <div class="sidebar-profile-info">
+            <img src="images/profile.png" />
+            <h1>Varun Yadav</h1>
+            <p>
+              &#128187;CS'25 @Parul University | Coding Enthusisast | C/C++/Java
+              | 250+ @GFG | 126 Days of streak &#128293; on GFG | Institude Rank
+              20 &#129351; GFG | MERN Stack Enthusiasts
+            </p>
+          </div>
 
-                <div class="sidebar-profile-insights">
-                    <ul>
-                        <li>Profile viewers<span>100</span></li>
-                        <li>Post impressions<span>1000</span></li>
-                    </ul>
-                </div>
+          <div class="sidebar-profile-insights">
+            <ul>
+              <li>Profile viewers<span>100</span></li>
+              <li>Post impressions<span>5000</span></li>
+            </ul>
+          </div>
 
-                <div class="sidebar-profile-premium">
-                    <p>Gain exclusive tools & insights</p>
-                    <a href="#"><i class="fa-solid fa-money-bill"></i> Redeem Premium for &#x20B9; 0 </a>
-                </div>
+          <div class="sidebar-profile-premium">
+            <p>Gain exclusive tools & insights</p>
+            <a href="#"
+              ><i class="fa-solid fa-money-bill"></i> Redeem Premium for
+              &#x20B9; 0
+            </a>
+          </div>
 
-                <div class="sidebar-profile-item">
-                    <a href="#"><i class="fa-solid fa-bookmark"></i> My items </a>
-                </div>
-            </div>
-
-            <div class="sidebar-activity" id="sidebarActivity">
-                <h3>Recent</h3>
-                <a href="#"><i class="fa-solid fa-people-group"></i> Artificial Intelligence, Deep Learning, Machine Learning</a>
-                <a href="#"><i class="fa-solid fa-people-group"></i> Programming - Python, Java, JavaScript, C#, R, C++, PHP, Swift, Go, TypeScript, Rust, Angular, SQL</a>
-                <a href="#"><i class="fa-solid fa-people-group"></i> AWS Certification & Training</a>
-                <a href="#"><i class="fa-solid fa-people-group"></i> Python Developers Community (moderated)</a>
-                
-                <h3><a href="#">Groups</a></h3>
-                <a href="#"><i class="fa-solid fa-people-group"></i> Python Developers Community (moderated)</a>
-                <a href="#"><i class="fa-solid fa-people-group"></i> AWS Certification & Training</a>
-                <a href="#"><i class="fa-solid fa-people-group"></i> Full Stack Developer - Java technologies, UI & Microservices</a>
-                <a href="#"><i class="fa-solid fa-people-group"></i> Programming - Python, Java, JavaScript, C#, R, C++, PHP, Swift, Go, TypeScript, Rust, Angular, SQL</a>
-                <a href="#"><i class="fa-solid fa-people-group"></i> Artificial Intelligence, Deep Learning, Machine Learning</a>
-
-                <h3><a href="#">Events <i class="fa-solid fa-plus"></i></a></h3>
-                <h3><a href="#">Followed Hashtags <i class="fa-solid fa-plus"></i></a></h3>
-
-                <div class="discover-more-links">
-                    <a href="#">Discover more</a>
-                </div>
-            </div>
-            <p id="showMoreLink" onclick="toggleActivity()">Show more <b>+</b></p>
+          <div class="sidebar-profile-item">
+            <a href="#"><i class="fa-solid fa-bookmark"></i> My items </a>
+          </div>
         </div>
-        <!-- ------------------------main-content------------------------------------- -->
-        <div class="main-content">
-    
-            <div class="create-post">
-                <div class="create-post-input">
-                    <img src="images/profile.png">
-                    <textarea rows="2" placeholder="Write a post"></textarea>
-                </div>
 
-                <div class="create-post-links">
-                    <li><i class="fa-solid fa-image"></i>Media</li>
-                    <li><i class="fa-regular fa-calendar-days"></i>Event</li>
-                    <li><i class="fa-regular fa-newspaper"></i>Write articale</li>
-                </div>
-            </div>
+        <div class="sidebar-activity" id="sidebarActivity">
+          <h3>Recent</h3>
+          <a href="#"
+            ><i class="fa-solid fa-people-group"></i> Artificial Intelligence,
+            Deep Learning, Machine Learning</a
+          >
+          <a href="#"
+            ><i class="fa-solid fa-people-group"></i> Programming - Python,
+            Java, JavaScript, C#, R, C++, PHP, Swift, Go, TypeScript, Rust,
+            Angular, SQL</a
+          >
+          <a href="#"
+            ><i class="fa-solid fa-people-group"></i> AWS Certification &
+            Training</a
+          >
+          <a href="#"
+            ><i class="fa-solid fa-people-group"></i> Python Developers
+            Community (moderated)</a
+          >
 
-            <div class="sort-by">
-                <hr>
-                <p>sort by: <span>top <i class="fa-solid fa-sort-down"></i></span></p>
-            </div>
+          <h3><a href="#">Groups</a></h3>
+          <a href="#"
+            ><i class="fa-solid fa-people-group"></i> Python Developers
+            Community (moderated)</a
+          >
+          <a href="#"
+            ><i class="fa-solid fa-people-group"></i> AWS Certification &
+            Training</a
+          >
+          <a href="#"
+            ><i class="fa-solid fa-people-group"></i> Full Stack Developer -
+            Java technologies, UI & Microservices</a
+          >
+          <a href="#"
+            ><i class="fa-solid fa-people-group"></i> Programming - Python,
+            Java, JavaScript, C#, R, C++, PHP, Swift, Go, TypeScript, Rust,
+            Angular, SQL</a
+          >
+          <a href="#"
+            ><i class="fa-solid fa-people-group"></i> Artificial Intelligence,
+            Deep Learning, Machine Learning</a
+          >
 
-            <!-- post-1 -->
-            <div class="post">
-                <div class="post-author">
-                    <img src="images/user-2.png">
-                    <div>
-                        <h1>Benjamin Leo</h1>
-                        <small>Founder and CEO at Gellelio Group | Angel Investor</small>
-                        <small>2 hours ago</small>
-                    </div>
-                </div>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. At, totam nostrum unde dolorum itaque eveniet reprehenderit veniam maiores aut autem quis eaque cumque animi asperiores rerum, atque dolore magnam. Necessitatibus esse autem in tenetur quasi temporibus earum voluptatibus debitis unde fugiat nemo magni maiores quo reiciendis, odit ab aliquid deserunt.</p>
-                <img src="images/post-1.jpg" width="100%">
+          <h3>
+            <a href="#">Events <i class="fa-solid fa-plus"></i></a>
+          </h3>
+          <h3>
+            <a href="#">Followed Hashtags <i class="fa-solid fa-plus"></i></a>
+          </h3>
 
-                <div class="post-stats">
-                    <div>
-                        <img src="images/thumbsup.png">
-                        <img src="images/love.png">
-                        <img src="images/clap.png">
-                        <span class="liked-users">Abhinav Mishra and 75 others</span>
-                    </div> 
-
-                    <div>
-                        <span>22 comments &middot; 40 shares</span>
-                    </div>
-                </div>
-
-                <div class="post-activity">
-                    <div class="post-activity-link">
-                        <i class="fa-regular fa-thumbs-up"></i>
-                        <!-- <img src="images/like.png"> -->
-                        <span>Like</span>
-                    </div>
-                    <div class="post-activity-link">
-                        <i class="fa-regular fa-comment-dots"></i>
-                        <!-- <img src="images/comment.png"> -->
-                        <span>comment</span>
-                    </div>
-                    <div class="post-activity-link">
-                        <i class="fa-solid fa-repeat"></i>
-                        <!-- <img src="images/repost.png"> -->
-                        <span>Repost</span>
-                    </div>
-                    <div class="post-activity-link">
-                        <i class="fa-solid fa-paper-plane"></i>
-                        <!-- <img src="images/send.png"> -->
-                        <span>Send</span>
-                    </div>
-                </div>
-            </div>
-
-            <!-- post-2 -->
-            <div class="post">
-                <div class="post-author">
-                    <img src="images/user-3.png">
-                    <div>
-                        <h1>Clarence George</h1>
-                        <small>Founder and CEO at Gellelio Group | Angel Investor</small>
-                        <small>2 hours ago</small>
-                    </div>
-                </div>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. At, totam nostrum unde dolorum itaque eveniet reprehenderit veniam maiores aut autem quis eaque cumque animi asperiores rerum, atque dolore magnam. Necessitatibus esse autem in tenetur quasi temporibus earum voluptatibus debitis unde fugiat nemo magni maiores quo reiciendis, odit ab aliquid deserunt.</p>
-                <img src="images/post-2.jpg" width="100%">
-
-                <div class="post-stats">
-                    <div>
-                        <img src="images/thumbsup.png">
-                        <img src="images/love.png">
-                        <img src="images/clap.png">
-                        <span class="liked-users">Abhinav Mishra and 75 others</span>
-                    </div> 
-
-                    <div>
-                        <span>22 comments &middot; 40 shares</span>
-                    </div>
-                </div>
-
-                <div class="post-activity">
-                    <div class="post-activity-link">
-                        <i class="fa-regular fa-thumbs-up"></i>
-                        <!-- <img src="images/like.png"> -->
-                        <span>Like</span>
-                    </div>
-                    <div class="post-activity-link">
-                        <i class="fa-regular fa-comment-dots"></i>
-                        <!-- <img src="images/comment.png"> -->
-                        <span>comment</span>
-                    </div>
-                    <div class="post-activity-link">
-                        <i class="fa-solid fa-repeat"></i>
-                        <!-- <img src="images/repost.jpg"> -->
-                        <span>Repost</span>
-                    </div>
-                    <div class="post-activity-link">
-                        <i class="fa-solid fa-paper-plane"></i>
-                        <!-- <img src="images/send.png"> -->
-                        <span>Send</span>
-                    </div>
-                </div>
-            </div>
-
-            <!-- post-3 -->
-            <div class="post">
-                <div class="post-author">
-                    <img src="images/user-4.png">
-                    <div>
-                        <h1>Benjamin Leo</h1>
-                        <small>Founder and CEO at Gellelio Group | Angel Investor</small>
-                        <small>2 hours ago</small>
-                    </div>
-                </div>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. At, totam nostrum unde dolorum itaque eveniet reprehenderit veniam maiores aut autem quis eaque cumque animi asperiores rerum, atque dolore magnam. Necessitatibus esse autem in tenetur quasi temporibus earum voluptatibus debitis unde fugiat nemo magni maiores quo reiciendis, odit ab aliquid deserunt.</p>
-                <img src="images/post-3.jpg" width="100%">
-
-                <div class="post-stats">
-                    <div>
-                        <img src="images/thumbsup.png">
-                        <img src="images/love.png">
-                        <img src="images/clap.png">
-                        <span class="liked-users">Abhinav Mishra and 75 others</span>
-                    </div> 
-
-                    <div>
-                        <span>22 comments &middot; 40 shares</span>
-                    </div>
-                </div>
-
-                <div class="post-activity">
-                    <div class="post-activity-link">
-                        <i class="fa-regular fa-thumbs-up"></i>
-                        <!-- <img src="images/like.png"> -->
-                        <span>Like</span>
-                    </div>
-                    <div class="post-activity-link">
-                        <i class="fa-regular fa-comment-dots"></i>
-                        <!-- <img src="images/comment.png"> -->
-                        <span>comment</span>
-                    </div>
-                    <div class="post-activity-link">
-                        <i class="fa-solid fa-repeat"></i>
-                        <!-- <img src="images/repost.jpg"> -->
-                        <span>Repost</span>
-                    </div>
-                    <div class="post-activity-link">
-                        <i class="fa-solid fa-paper-plane"></i>
-                        <!-- <img src="images/send.png"> -->
-                        <span>Send</span>
-                    </div>
-                </div>
-            </div>
-
-            <!-- post-4 -->
-            <div class="post">
-                <div class="post-author">
-                    <img src="images/user-5.png">
-                    <div>
-                        <h1>Benjamin Leo</h1>
-                        <small>Founder and CEO at Gellelio Group | Angel Investor</small>
-                        <small>2 hours ago</small>
-                    </div>
-                </div>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. At, totam nostrum unde dolorum itaque eveniet reprehenderit veniam maiores aut autem quis eaque cumque animi asperiores rerum, atque dolore magnam. Necessitatibus esse autem in tenetur quasi temporibus earum voluptatibus debitis unde fugiat nemo magni maiores quo reiciendis, odit ab aliquid deserunt.</p>
-                <img src="images/post-4.jpg" width="100%">
-
-                <div class="post-stats">
-                    <div>
-                        <img src="images/thumbsup.png">
-                        <img src="images/love.png">
-                        <img src="images/clap.png">
-                        <span class="liked-users">Abhinav Mishra and 75 others</span>
-                    </div> 
-
-                    <div>
-                        <span>22 comments &middot; 40 shares</span>
-                    </div>
-                </div>
-
-                <div class="post-activity">
-                    <div class="post-activity-link">
-                        <i class="fa-regular fa-thumbs-up"></i>
-                        <!-- <img src="images/like.png"> -->
-                        <span>Like</span>
-                    </div>
-                    <div class="post-activity-link">
-                        <i class="fa-regular fa-comment-dots"></i>
-                        <!-- <img src="images/comment.png"> -->
-                        <span>comment</span>
-                    </div>
-                    <div class="post-activity-link">
-                        <i class="fa-solid fa-repeat"></i>
-                        <!-- <img src="images/repost.jpg"> -->
-                        <span>Repost</span>
-                    </div>
-                    <div class="post-activity-link">
-                        <i class="fa-solid fa-paper-plane"></i>
-                        <!-- <img src="images/send.png"> -->
-                        <span>Send</span>
-                    </div>
-                </div>
-            </div>
-        </div>   
-        <!-- ----------------------------right-sidebar------------------------------------------  -->
-        <div class="right-sidebar">
-            <div class="sidebar-news">
-                <i class="fa-solid fa-circle-info"></i>
-                <h3>LinkedIn News</h3>
-                <a href="#">More brands headline live events</a>
-                <span>1d ago &middot; 10,934 readers</span>
-
-                <a href="#">SpiceJet to lay off 1,400 people</a>
-                <span>1d ago &middot; 1,534 readers</span>
-
-                <a href="#">Chart your online course</a>
-                <span>1d ago &middot; 23,474 readers</span>
-
-                <a href="#">Phone-makers ring in more jobs</a>
-                <span>12 ago &middot; 5,244 readers</span>
-
-                <a href="#">Quick commerce races ahead</a>
-                <span>5h ago &middot; 1034 readers</span>
-
-                <a href="#" class="read-more-link">Read More</a>
-            </div>
-
-            <div class="sidebar-ad">
-                <small>Ad &middot; &middot; &middot;</small>
-                <p>Master the 5 principle of web design</p>
-                <div>
-                    <img src="images/profile.png">
-                    <img src="images/mi-logo.png" alt="">
-                </div>
-                <b>Brand and Demand in Xiaomi</b>
-                <a href="#" class="ad-link">Learn More</a>
-            </div>
-
-            <div class="sidebar-useful-links">
-                <a href="#">About</a>
-                <a href="#">Accessiblity</a>
-                <a href="#">Help Center</a>
-                <a href="#">Privacy Policy</a>
-                <a href="#">Advertising</a>
-                <a href="#">Get the App</a>
-                <a href="#">More</a>
-
-                <div class="copyright-msg">
-                    <img src="images/logo.png">
-                    <p>Linkedin &#169; 2024. All rights reserved</p>
-                </div>
-            </div>
+          <div class="discover-more-links">
+            <a href="#">Discover more</a>
+          </div>
         </div>
+        <p id="showMoreLink" onclick="toggleActivity()">Show more <b>+</b></p>
+      </div>
+      <!-- ------------------------main-content------------------------------------- -->
+      <div class="main-content">
+        <div class="create-post">
+          <div class="create-post-input">
+            <img src="images/profile.png" />
+            <textarea rows="2" placeholder="Write a post"></textarea>
+          </div>
+
+          <div class="create-post-links">
+            <li><i class="fa-solid fa-image"></i>Media</li>
+            <li><i class="fa-regular fa-calendar-days"></i>Event</li>
+            <li><i class="fa-regular fa-newspaper"></i>Write articale</li>
+          </div>
+        </div>
+
+        <div class="sort-by">
+          <hr />
+          <p>
+            sort by: <span>top <i class="fa-solid fa-sort-down"></i></span>
+          </p>
+        </div>
+
+        <!-- post-1 -->
+        <div class="post">
+          <div class="post-author">
+            <img src="images/user-2.png" />
+            <div>
+              <h1>Benjamin Leo</h1>
+              <small>Founder and CEO at Gellelio Group | Angel Investor</small>
+              <small>2 hours ago</small>
+            </div>
+          </div>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. At, totam
+            nostrum unde dolorum itaque eveniet reprehenderit veniam maiores aut
+            autem quis eaque cumque animi asperiores rerum, atque dolore magnam.
+            Necessitatibus esse autem in tenetur quasi temporibus earum
+            voluptatibus debitis unde fugiat nemo magni maiores quo reiciendis,
+            odit ab aliquid deserunt.
+          </p>
+          <img src="images/post-1.jpg" width="100%" />
+
+          <div class="post-stats">
+            <div>
+              <img src="images/thumbsup.png" />
+              <img src="images/love.png" />
+              <img src="images/clap.png" />
+              <span class="liked-users">Abhinav Mishra and 105 others</span>
+            </div>
+
+            <div>
+              <span>39 comments &middot; 100 shares</span>
+            </div>
+          </div>
+
+          <div class="post-activity">
+            <div class="post-activity-link">
+              <i class="fa-regular fa-thumbs-up"></i>
+              <!-- <img src="images/like.png"> -->
+              <span>Like</span>
+            </div>
+            <div class="post-activity-link">
+              <i class="fa-regular fa-comment-dots"></i>
+              <!-- <img src="images/comment.png"> -->
+              <span>comment</span>
+            </div>
+            <div class="post-activity-link">
+              <i class="fa-solid fa-repeat"></i>
+              <!-- <img src="images/repost.png"> -->
+              <span>Repost</span>
+            </div>
+            <div class="post-activity-link">
+              <i class="fa-solid fa-paper-plane"></i>
+              <!-- <img src="images/send.png"> -->
+              <span>Send</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- post-2 -->
+        <div class="post">
+          <div class="post-author">
+            <img src="images/user-3.png" />
+            <div>
+              <h1>Clarence George</h1>
+              <small>Founder and CEO at Gellelio Group | Angel Investor</small>
+              <small>2d ago</small>
+            </div>
+          </div>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. At, totam
+            nostrum unde dolorum itaque eveniet reprehenderit veniam maiores aut
+            autem quis eaque cumque animi asperiores rerum, atque dolore magnam.
+            Necessitatibus esse autem in tenetur quasi temporibus earum
+            voluptatibus debitis unde fugiat nemo magni maiores quo reiciendis,
+            odit ab aliquid deserunt.
+          </p>
+          <img src="images/post-2.jpg" width="100%" />
+
+          <div class="post-stats">
+            <div>
+              <img src="images/thumbsup.png" />
+              <img src="images/love.png" />
+              <img src="images/clap.png" />
+              <span class="liked-users">Abhinav Mishra and 450 others</span>
+            </div>
+
+            <div>
+              <span>22 comments &middot; 40 shares</span>
+            </div>
+          </div>
+
+          <div class="post-activity">
+            <div class="post-activity-link">
+              <i class="fa-regular fa-thumbs-up"></i>
+              <!-- <img src="images/like.png"> -->
+              <span>Like</span>
+            </div>
+            <div class="post-activity-link">
+              <i class="fa-regular fa-comment-dots"></i>
+              <!-- <img src="images/comment.png"> -->
+              <span>comment</span>
+            </div>
+            <div class="post-activity-link">
+              <i class="fa-solid fa-repeat"></i>
+              <!-- <img src="images/repost.jpg"> -->
+              <span>Repost</span>
+            </div>
+            <div class="post-activity-link">
+              <i class="fa-solid fa-paper-plane"></i>
+              <!-- <img src="images/send.png"> -->
+              <span>Send</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- post-3 -->
+        <div class="post">
+          <div class="post-author">
+            <img src="images/user-4.png" />
+            <div>
+              <h1>Benjamin Leo</h1>
+              <small>Founder and CEO at Gellelio Group | Angel Investor</small>
+              <small>12 hours ago</small>
+            </div>
+          </div>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. At, totam
+            nostrum unde dolorum itaque eveniet reprehenderit veniam maiores aut
+            autem quis eaque cumque animi asperiores rerum, atque dolore magnam.
+            Necessitatibus esse autem in tenetur quasi temporibus earum
+            voluptatibus debitis unde fugiat nemo magni maiores quo reiciendis,
+            odit ab aliquid deserunt.
+          </p>
+          <img src="images/post-3.jpg" width="100%" />
+
+          <div class="post-stats">
+            <div>
+              <img src="images/thumbsup.png" />
+              <img src="images/love.png" />
+              <img src="images/clap.png" />
+              <span class="liked-users">Abhinav Mishra and 75 others</span>
+            </div>
+
+            <div>
+              <span>2 comments &middot; 10 shares</span>
+            </div>
+          </div>
+
+          <div class="post-activity">
+            <div class="post-activity-link">
+              <i class="fa-regular fa-thumbs-up"></i>
+              <!-- <img src="images/like.png"> -->
+              <span>Like</span>
+            </div>
+            <div class="post-activity-link">
+              <i class="fa-regular fa-comment-dots"></i>
+              <!-- <img src="images/comment.png"> -->
+              <span>comment</span>
+            </div>
+            <div class="post-activity-link">
+              <i class="fa-solid fa-repeat"></i>
+              <!-- <img src="images/repost.jpg"> -->
+              <span>Repost</span>
+            </div>
+            <div class="post-activity-link">
+              <i class="fa-solid fa-paper-plane"></i>
+              <!-- <img src="images/send.png"> -->
+              <span>Send</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- post-4 -->
+        <div class="post">
+          <div class="post-author">
+            <img src="images/user-5.png" />
+            <div>
+              <h1>Benjamin Leo</h1>
+              <small>Founder and CEO at Gellelio Group | Angel Investor</small>
+              <small>2 hours ago</small>
+            </div>
+          </div>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. At, totam
+            nostrum unde dolorum itaque eveniet reprehenderit veniam maiores aut
+            autem quis eaque cumque animi asperiores rerum, atque dolore magnam.
+            Necessitatibus esse autem in tenetur quasi temporibus earum
+            voluptatibus debitis unde fugiat nemo magni maiores quo reiciendis,
+            odit ab aliquid deserunt.
+          </p>
+          <img src="images/post-4.jpg" width="100%" />
+
+          <div class="post-stats">
+            <div>
+              <img src="images/thumbsup.png" />
+              <img src="images/love.png" />
+              <img src="images/clap.png" />
+              <span class="liked-users">Abhinav Mishra and 200 others</span>
+            </div>
+
+            <div>
+              <span>24 comments &middot; 5 shares</span>
+            </div>
+          </div>
+
+          <div class="post-activity">
+            <div class="post-activity-link">
+              <i class="fa-regular fa-thumbs-up"></i>
+              <!-- <img src="images/like.png"> -->
+              <span>Like</span>
+            </div>
+            <div class="post-activity-link">
+              <i class="fa-regular fa-comment-dots"></i>
+              <!-- <img src="images/comment.png"> -->
+              <span>comment</span>
+            </div>
+            <div class="post-activity-link">
+              <i class="fa-solid fa-repeat"></i>
+              <!-- <img src="images/repost.jpg"> -->
+              <span>Repost</span>
+            </div>
+            <div class="post-activity-link">
+              <i class="fa-solid fa-paper-plane"></i>
+              <!-- <img src="images/send.png"> -->
+              <span>Send</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- ----------------------------right-sidebar------------------------------------------  -->
+      <div class="right-sidebar">
+        <div class="sidebar-news">
+          <i class="fa-solid fa-circle-info"></i>
+          <h3>LinkedIn News</h3>
+          <a href="#">More brands headline live events</a>
+          <span>1d ago &middot; 10,934 readers</span>
+
+          <a href="#">SpiceJet to lay off 1,400 people</a>
+          <span>1d ago &middot; 1,534 readers</span>
+
+          <a href="#">Chart your online course</a>
+          <span>1d ago &middot; 23,474 readers</span>
+
+          <a href="#">Phone-makers ring in more jobs</a>
+          <span>12 ago &middot; 5,244 readers</span>
+
+          <a href="#">Quick commerce races ahead</a>
+          <span>5h ago &middot; 1034 readers</span>
+
+          <a href="#" class="read-more-link">Read More</a>
+        </div>
+
+        <div class="sidebar-ad">
+          <small>Ad &middot; &middot; &middot;</small>
+          <p>Master the 5 principle of web design</p>
+          <div>
+            <img src="images/profile.png" />
+            <img src="images/mi-logo.png" alt="" />
+          </div>
+          <b>Brand and Demand in Xiaomi</b>
+          <a href="#" class="ad-link">Learn More</a>
+        </div>
+
+        <div class="sidebar-useful-links">
+          <a href="#">About</a>
+          <a href="#">Accessiblity</a>
+          <a href="#">Help Center</a>
+          <a href="#">Privacy Policy</a>
+          <a href="#">Advertising</a>
+          <a href="#">Get the App</a>
+          <a href="#">More</a>
+
+          <div class="copyright-msg">
+            <img src="images/logo.png" />
+            <p>Linkedin &#169; 2024. All rights reserved</p>
+          </div>
+        </div>
+      </div>
     </div>
-</body>
-<script>
-    let profileMenu=document.getElementById("profileMenu");
-    function toggleMenu(){
-        profileMenu.classList.toggle("open-menu");
+  </body>
+  <script>
+    let profileMenu = document.getElementById("profileMenu");
+    function toggleMenu() {
+      profileMenu.classList.toggle("open-menu");
     }
-</script>
+  </script>
 
-<script>
+  <script>
     let sideActivity = document.getElementById("sidebarActivity");
     let moreLink = document.getElementById("showMoreLink");
 
-    function toggleActivity(){
-        sideActivity.classList.toggle("open-activity");
-        if(sideActivity.classList.contains("open-activity")){
-            moreLink.innerHTML="Show Less <b>-</b>"
-        }
-        else{
-            moreLink.innerHTML="Show more <b>+</br>"
-        }
+    function toggleActivity() {
+      sideActivity.classList.toggle("open-activity");
+      if (sideActivity.classList.contains("open-activity")) {
+        moreLink.innerHTML = "Show Less <b>-</b>";
+      } else {
+        moreLink.innerHTML = "Show more <b>+</br>";
+      }
     }
-</script>
+  </script>
 </html>

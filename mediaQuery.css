@@ -49,6 +49,9 @@
     .profile-container{
         font-size: 14px;
     }
+    .profile-container .profile-btn{
+        font-size: 12px;
+    }
     .profile-pic{
         width: 100px;
         margin-top: -50px;
