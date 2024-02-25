@@ -575,6 +575,8 @@ a{
 }
 .profile-container{
     background: #fff;
+    border: 2px solid #77777732;
+    border-radius: 10px;
 }
 .profile-container-inner{
     padding: 0 4% 10px;
@@ -591,9 +593,6 @@ a{
     font-weight: 600;
     color: #222;
 }
-.profilr-container b{
-    font-weight: 500;
-}
 .profile-container p{
     margin-top: 5px;
 }
@@ -601,15 +600,15 @@ a{
     color: #045be6;
     font-weight: 500;
 }
-.mutual-connection{
+.network-btn{
     display: flex;
-    align-items: center;
+    gap: 10px;
     margin: 20px 0;
+    flex-direction: column;
 }
-.mutual-connection img{
-    width: 30px;
-    border-radius: 50%;
+.network-btn div{
     margin-right: 5px;
+    color: #045be6;
 }
 .profile-btn{
     margin: 20px 0;
@@ -617,23 +616,37 @@ a{
 .profile-btn a{
     display: inline-flex;
     align-items: center;
-    background: #e4e6eb;
+    background: transparent;
     padding: 6px 15px;
-    border-radius: 4px;
+    border-radius: 20px;
     margin-right: 10px;
+    border: 1px solid #333;
 }
-.profile-btn a img{
-    width: 18px;
-    margin-right: 5px;
+.profile-btn a:hover{
+    border: 2px solid #333;
 }
 .profile-btn .primery-btn{
     background: #045be6;
     color: #fff;
+    border: none;
+}
+.profile-btn .primery-btn:hover{
+    background-color: #012764;
+    border: 2px solid #012764;
+}
+.profile-btn .secondery-btn{
+    color: #045be6;
+    border: 1px solid #045be6;
+}
+.profile-btn .secondery-btn:hover{
+    border: 2px solid #0454d4;
 }
 .profile-description{
     background: #fff;
     padding: 20px 4% 30px;
     margin: 12px 0;
+    border: 2px solid #77777732;
+    border-radius: 10px;
 }
 .profile-description h2{
     color: #333;
@@ -717,6 +730,8 @@ a{
     padding: 15px 25px;
     margin: 12px 0;
     font-size: 12px;
+    border: 2px solid #77777732;
+    border-radius: 10px;
 }
 .sidebar-people h3{
     font-size: 16px;
