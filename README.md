@@ -9,6 +9,8 @@ about how websites work.
 ## Screenshort 📸
 ![Screenshot 2024-02-27 153943](https://github.com/Varunyadavgithub/LinkedIn-UI-Clone/assets/134674472/eb1387cf-9697-411a-9948-be8c6ef99231)
 
+## Live Link 🔗
+https://varunyadavgithub.github.io/LinkedIn-UI-Clone/
 
 ## Features✨
 - **Homepage**: Mimics the layout of the LinkedIn homepage, including the navigation bar, feed, sidebar, and footer.
