@@ -6,8 +6,9 @@ of HTML, CSS, and JavaScript. By making a copy of the LinkedIn website's look an
 building web pages and making them interactive. It's like a fun exercise to sharpen my web development skills and learn more 
 about how websites work.
 
-## Demo🎥
-[Include screenshots or GIFs demonstrating the UI clone in action]
+## Screenshort 📸
+![Screenshot 2024-02-27 153943](https://github.com/Varunyadavgithub/LinkedIn-UI-Clone/assets/134674472/eb1387cf-9697-411a-9948-be8c6ef99231)
+
 
 ## Features✨
 - **Homepage**: Mimics the layout of the LinkedIn homepage, including the navigation bar, feed, sidebar, and footer.
@@ -15,7 +16,6 @@ about how websites work.
 - **Interactive Elements**: Implements interactive elements such as buttons, dropdowns, and modals to replicate LinkedIn's functionality.
 - **Styling**: Uses CSS to style the UI elements to closely resemble the visual appearance of LinkedIn.
 - **Profile Section**: Includes a profile section displaying user information, connections, and recent activity.
-- 
 
 ## Technologies Used🛠️
 - **HTML**: Markup language for structuring the web pages.
